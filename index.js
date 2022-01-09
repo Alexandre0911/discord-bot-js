@@ -8,7 +8,7 @@ require("dotenv").config()
 
 const welcomeChannelId = "929633937779728414"
 
-const minecraft = "929639886464614400"
+const minecraftChannelId = "929639886464614400"
 
 const client = new Discord.Client({
     intents: [
@@ -19,8 +19,9 @@ const client = new Discord.Client({
 })
 
 
-client.on("ready", () => {
+client.on("ready", (message) => {
     console.log(`Logged in as ${client.user.tag}`)
+    message.channels.cache.get(minecraftChannelId).send("```\nMy Commands:\n\n!server >>> Shows whether minecraft server is online```")
 })
 
 
