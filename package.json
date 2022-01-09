@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "canvas": "^2.8.0",
     "discord.js": "^13.5.1",
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "minecraft-server-status": "^1.0.1"
   }
 }
